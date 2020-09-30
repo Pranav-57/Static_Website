@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 html{
@@ -27,7 +28,6 @@ a{
     z-index: 100;
 }
 .navbar{
-    background-color: black;
     left: 0;
     top: 0;
     display: flex;
@@ -89,16 +89,17 @@ a{
     left: 50%;
     transform: translateX(-50%) scale(0);
     justify-content: center;
-    bottom: 5px;
-    transition: .3s ease transform;
+    bottom: 3px;
+    transition: 1s ease transform;
 }
 .navbar .nav-list ul li a{
     color: white;
     display: block;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.2rem!important;
     letter-spacing: .15rem;
     padding: 1rem 0;
+    font-weight: bolder;
 }
 .navbar .nav-list.open ul{
     transform: translateY(55px);
@@ -129,7 +130,7 @@ a{
     color: white;
 }
 .profile .profile-info p{
-    font-size: 1.6rem;
+    font-size: 1.4rem!important;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.2rem;
@@ -145,7 +146,7 @@ a{
     letter-spacing: .6rem;
     background-color: rgba(128, 255, 0, 0.979);
     border: 2px solid black;
-    transition: 1s ease background-color;
+    transition: 1s ease all;
 }
 .profile .profile-info a:hover{
     color: chartreuse;
@@ -181,9 +182,9 @@ a{
     /* font-weight: 900; */
 }
 .about .about-info p{
-    font-size: 1.6rem;
+    font-size: 1.4rem!important;
     line-height: 2rem;
-    padding-top: 3rem;
+    padding-top: 2rem!important;
 }
 .about .about-info a{
     margin: 20px 0;
@@ -234,9 +235,9 @@ a{
     letter-spacing: .2rem;
 }
 .services .services-header p{
-    font-size: 1.6rem;
+    font-size: 1.6rem!important;
     line-height: 2rem;
-    margin-top: 3rem;
+    margin-top: 3rem!important;
 }
 .services .services-info{
     margin-top: 30px;
@@ -292,7 +293,7 @@ a{
     transform: rotateY(180deg)
 }
 .services .services-info .service .service-cards .service-back p{
-    font-size: 1rem;
+    font-size: 1rem!important;
     text-align: center;
     margin-top: 10px;
 }
@@ -358,7 +359,7 @@ a{
     margin-bottom: 20px;
 }
 .footer .footer-contact p{
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
     padding: 2px;
@@ -373,6 +374,7 @@ a{
     color: white;
     font-size: 20px;
     padding: 5px;
+    /* transition: all 1s ease; */
 }
 .footer-social-icons a:hover{
     color: chartreuse;
